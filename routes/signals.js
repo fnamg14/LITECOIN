@@ -3,6 +3,7 @@ const router = express.Router();
 const signalsController = require('../controllers/signalsController');
 
 router.post('/ltc', signalsController.generateLTCSignals);
+router.post('/get', signalsController.generateLTCSignals);
 router.get('/upcoming', signalsController.getUpcomingSignals);
 router.post('/clear-cache', signalsController.clearCache);
 
